@@ -10,19 +10,28 @@ $nombre = isset($_POST['nombre'])?limpiarCadena($_POST['nombre']):"";
 $descripcion = isset($_POST['descripcion'])?limpiarCadena($_POST['descripcion']):"";
 
 
+
+
+
 switch ($_GET['opcion']) {
+
 	case 'insertar':
 		$respuesta = $categoria->insertar($nombre, $descripcion);	
 		if ($respuesta) 
 				echo "Se inserto correctamente";
 		else 
 			echo "no se inserto";
+
+
+
 	break;
 
 	case 'editar':
 		$respuesta = $categoria->editar($idcategoria, $nombre, $descripcion);
 		echo $respuesta?"Se edito la categoria $nombre": "no se edito";
 	break;
+
+	
 
 	case 'desactivar':
 		$respuesta = $categoria->desactivar($idcategoria);

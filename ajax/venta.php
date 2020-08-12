@@ -168,6 +168,11 @@ switch ($_GET['opcion']) {
  		echo json_encode($results);
 	break;
 
+	case 'anular':
+		$respuesta = $venta->anular($idventa);
+		echo $respuesta? "Venta Anulada ":"Venta no se puede anular";
+	break;
+	
 	default:
 		# code...
 		break;

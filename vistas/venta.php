@@ -192,6 +192,8 @@ else
 require 'footer.php';
 ?>
 <script type="text/javascript" src="scripts/venta.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/5.4.0/bootbox.min.js"></script>
+
 <?php 
 }
 ob_end_flush();

@@ -220,9 +220,6 @@ function mostrar(idventa){
 // }
 
 
-
-//function desactivar una categoria
-
 function anular(idventa){
 	bootbox.confirm("Esta seguro de Anular la Venta", function(result){
 		if(result){
@@ -233,6 +230,9 @@ function anular(idventa){
 		}
 	})
 }
+
+
+
 
 var impuesto=18;
 var cont=0;
